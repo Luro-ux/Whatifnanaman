@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html> 
-<head>
+<head> <title>Ano kaya to</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">      
     <link href="style.css" rel="stylesheet" type="style/css">
@@ -25,13 +25,25 @@
                 alert("Ay sorry sa abala");
             }
         }
-
+        
         // Function to show the second confirmation
         function showConfirmation2() {
-            var userConfirmed = confirm("Umm");
+            var userConfirmed = confirm("Ginawa ko to para din mag papansin sayo");
             if (userConfirmed) {
                 // If the user confirms, show the third confirmation
                 showConfirmation3();
+            } else {
+                // Handle the case where the user cancels the first confirmation
+                alert("Ay sorry sa abala");
+            }
+        }
+
+        // Function to show the third confirmation
+        function showConfirmation3() {
+            var userConfirmed = confirm("Umm");
+            if (userConfirmed) {
+                // If the user confirms, show the fourth confirmation
+                showConfirmation4();
             } else {
                 // Handle the case where the user cancels the second confirmation
                 alert("Sorry meron na pala");
@@ -41,39 +53,38 @@
             }
         }
 
-        // Function to show the third confirmation
-        function showConfirmation3() {
+        // Function to show the fourth confirmation
+        function showConfirmation4() {
             var userConfirmed = confirm("what if");
             if (userConfirmed) {
-                // If the user confirms, show the fourth confirmation
-                showConfirmation4();
+                // If the user confirms, show the fifth confirmation
+                showConfirmation5();
             } else {
                 // Handle the case where the user cancels the third confirmation
-                alert("Sorry meron na pala");
                 alert("pasensya");
                 alert("sa oras na sayang");
                 alert("salamat din sa oras mo");
             }
         }
 
-        // Function to show the fourth confirmation
-        function showConfirmation4() {
+        // Function to show the fifth confirmation
+        function showConfirmation5() {
             var userConfirmed = confirm("Ako ang para sayo");
             if (userConfirmed) {
-                // If the user confirms, show the fifth confirmation
-                showConfirmation5();
+                // If the user confirms, show the sixth confirmation
+                showConfirmation6();
             } else {
                 // Handle the case where the user cancels the fourth confirmation
                 alert("Operation canceled.");
             }
         }
 
-        // Function to show the fifth confirmation
-        function showConfirmation5() {
+        // Function to show the sixth confirmation
+        function showConfirmation6() {
             var userConfirmed = confirm("Ano nnaman to Vincent");
             if (userConfirmed) {
-                // If the user confirms(, show the sixth confirmation
-                showConfirmation6();
+                // If the user confirms(, show the seventh confirmation
+                showConfirmation7();
             } else {
                 // handle the case where the user cancel the fifth confirmation
                 alert("Operation canceled.");
@@ -81,7 +92,7 @@
         }
 
         // Function to show the sixth confirmation
-        function showConfirmation6() {
+        function showConfirmation7() {
             var userConfirmed = confirm("what if ako talaga ang para sayo");
             if (userConfirmed) {
                 // If the user confirms the fourth confirmation, proceed with your action
